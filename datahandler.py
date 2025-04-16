@@ -258,7 +258,7 @@ class Open:
         for i in self.dataframe.index:
             self.dataframe.loc[i] = self.data[i]
 
-        self.dataframe = self.dataframe.replace(0, np.NaN)
+        self.dataframe = self.dataframe.replace(0, np.nan)
 
         baseline = range(round(self.triggers[0]), round(self.triggers[1]))
         baseline_values = []
